@@ -11,7 +11,9 @@
     <?php include 'header.php' ?>
 
     <main>
-        <h4>Coming soon!</h4>
+        <ul>
+            <li><a href="../Week03/index.php">Week 03</a></li>
+        </ul>
     </main>
 
     <?php include 'footer.php' ?>
