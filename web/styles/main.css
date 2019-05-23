@@ -15,6 +15,11 @@ body {
   padding: 1.3rem 0;
 }
 
+.assign-page {
+  width: 90%;
+  height: auto;
+}
+
 #mainHeader {
   padding: 1rem 1.2rem;
   font-weight: 700;

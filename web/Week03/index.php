@@ -9,7 +9,9 @@
 </head>
 <body>
     <?php include '../header.php'; ?>
-    <h1>Hello, this is working</h1>
+        <div class="assign-page">
+            <h1>Hello, this is working</h1>
+        </div>
     <?php include '../footer.php'; ?>
 </body>
 </html>
