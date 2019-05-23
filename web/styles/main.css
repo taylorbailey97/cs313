@@ -20,6 +20,10 @@ body {
   height: auto;
 }
 
+.assign-page h2 {
+  color: black;
+}
+
 #mainHeader {
   padding: 1rem 1.2rem;
   font-weight: 700;
