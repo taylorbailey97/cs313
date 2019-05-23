@@ -13,10 +13,8 @@
       case '/contacts.php':
           $login = true;
           break;
-      case '/assignments.php':
-          $assign = true;
-          break;
       default:
+          $assign = true;
           break;
   }
 ?>
