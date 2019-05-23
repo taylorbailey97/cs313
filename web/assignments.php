@@ -12,7 +12,7 @@
 
     <main>
         <ul>
-            <li><a href="../Week03/index.php">Week 03</a></li>
+            <li><a href="./Week03/index.php">Week 03</a></li>
         </ul>
     </main>
 
