@@ -18,6 +18,7 @@ body {
 .assign-page {
   width: 90%;
   height: auto;
+  margin: 2rem auto;
 }
 
 .assign-page h1 {
