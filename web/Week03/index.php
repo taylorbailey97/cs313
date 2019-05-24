@@ -23,9 +23,9 @@
                     $schResult = pg_fetch_row($schedule);
                     echo 
                     '<section class="results">
-                        <h3>' . $row['cName'] .'<h3><br>
-                        <p>' . $row['pNumber'] .'</p>
-                        <p>' . $schResult['sTime'] . '</p>
+                        <h3>' . $row[2] .'<h3><br>
+                        <p>' . $row[3] .'</p>
+                        <p>' . $schResult[4] . '</p>
                     </section>';
                 }
             ?>
