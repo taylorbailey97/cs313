@@ -8,10 +8,26 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 </head>
+<?php
+    $conn = pg_connect("host=ec2-23-23-228-132.compute-1.amazonaws.com port=5432 dbname=d1g7jofa0mrt6 user=uozkdeksbhmesl password=81aa8d0de1d48951ad31620a590cff1c5710020804ba145bac9a4f039e65d077");
+    $results = pg_query($conn, "select * from Appointment");
+?>
 <body>
     <?php include '../header.php'; ?>
         <div class="assign-page">
             <h1>Hello, this is working</h1>
+            <?php
+                while ($row = pg_fetch_row($results)) {
+                    $schedule = pg_query($conn, "select ". $row['ScheduleID'] ." FROM Schedule");
+                    $schResult = pg_fetch_row($schedule);
+                    echo 
+                    '<section>
+                        <h3>' . $row['cName'] .'<h3><br>
+                        <p>' . $row['pNumber'] .'</p>
+                        <p>' . $schResult['sTime'] . '</p>
+                    </section>';
+                }
+            ?>
         </div>
     <?php include '../footer.php'; ?>
 </body>
