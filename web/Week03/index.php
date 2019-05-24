@@ -19,7 +19,7 @@
             <h1>Hello, this is working</h1>
             <?php
                 while ($row = pg_fetch_row($results)) {
-                    $schedule = pg_query($conn, "select ". $row[3] ." FROM Schedule");
+                    $schedule = pg_query($conn, "select * FROM Schedule WHERE ScheduleID=" . $row[3]);
                     $schResult = pg_fetch_row($schedule);
                     echo 
                     '<section class="results">
