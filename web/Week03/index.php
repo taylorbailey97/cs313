@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Week 03 - Taylor Bailey</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/week03.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 </head>
 <?php
@@ -21,7 +22,7 @@
                     $schedule = pg_query($conn, "select ". $row['ScheduleID'] ." FROM Schedule");
                     $schResult = pg_fetch_row($schedule);
                     echo 
-                    '<section>
+                    '<section class="results">
                         <h3>' . $row['cName'] .'<h3><br>
                         <p>' . $row['pNumber'] .'</p>
                         <p>' . $schResult['sTime'] . '</p>
