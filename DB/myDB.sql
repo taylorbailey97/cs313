@@ -11,5 +11,13 @@ CREATE TABLE Schedule (
     sTime TIMESTAMP NOT NULL
 );
 
-INSERT INTO Schedule (sTime)
-VALUES (1, '2019-05-28 03:00:00'::TIMESTAMP);
+INSERT INTO Schedule
+VALUES (2, '2019-05-31 04:30:00'::TIMESTAMP);
+
+SELECT * FROM Schedule;
+
+INSERT INTO Appointment 
+VALUES (3, 'Alex Brown', '5948379999', 2);
+
+SELECT * FROM Appointment;
+
