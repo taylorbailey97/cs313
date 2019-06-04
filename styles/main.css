@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+html, * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(rgba(255, 255, 255, .8),rgba(255, 255, 255, .5),url('../images/bg-masthead.jpg'));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    margin: 0;
+    font-family: Lora, serif;
+    color: #fff;
+    padding: .8em .4em;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 1.8em;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+header ul {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+body {
+    background-color: #fff;
+}
+
+main {
+    text-align: center;
+}
