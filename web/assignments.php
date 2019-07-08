@@ -7,7 +7,7 @@
     <title>Assignment - Taylor Bailey</title>
     <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
+<body class="assign-page">
     <?php include 'header.php' ?>
 
     <main>
