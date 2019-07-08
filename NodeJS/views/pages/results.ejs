@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../partials/header.ejs %>
+  </head>
+
+  <body>
+    <% include ../partials/nav.ejs %>
+    <div class="body-center">
+        <a href="/week09">Back</a>
+        <p>Ounces: <span id="oz"><%= ounces %></span></p>
+        <p>Packaging: <span id="pack"><%= package %></span></p>
+        <h3>Your total cost is: $<span id="total"></span></h3>
+    </div>
+    <script src="/scripts/calculate.js"></script>
+    <script>
+        var oz = <%- ounces %>,
+            package = <%- JSON.stringify(package) %>;
+        console.log('oz: ' + oz + ' packaging: ' + package);
+        document.getElementById("total").innerHTML = calculateRate(oz, package);
+    </script>
+  </body>
+</html>

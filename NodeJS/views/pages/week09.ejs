@@ -7,7 +7,21 @@
 <body>
 
   <% include ../partials/nav.ejs %>
-
-  <p>You're in week 9</p>
+  <div class="body-center">
+    <form action="/results.ejs" method="post">
+      <label for="weight">Please enter the weight: </label><br>
+      <input type="number" name="ounces" placeholder="0.0">oz<br>
+  
+      <label for="packaging">Select the type of package: </label><br>
+      <select name="packaging">
+          <option value="stamped">Letters (Stamped)</option>
+          <option value="metered">Letters (Metered)</option>
+          <option value="flat">Large Envelopes (Flats)</option>
+          <option value="package">First-Class Package Service—Retail</option>
+      </select>
+  
+      <input type="submit" value="Get Cost">
+    </form>
+  </div>
 </body>
 </html>
