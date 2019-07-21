@@ -1,0 +1,19 @@
+$bg: rgb(241, 241, 241);
+.carousel-item img {
+    height: 70vh;
+    margin: 0 auto;
+}
+
+.bgDiv {
+    background-color: $bg;
+}
+
+.carousel {
+    width: 40vw;
+    margin: 0 auto;
+    background-color: $bg;
+}
+
+.active {
+    background-color: $bg !important;
+}

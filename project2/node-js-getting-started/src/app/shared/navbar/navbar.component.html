@@ -1,0 +1,30 @@
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a routerLink="/home"><img class="logo" src="../../../assets/img/test_flowers.png" alt="flowers"></a>
+      <a class="navbar-brand" routerLink="/home" id="brand"><h1>Nails</h1> <p>by Bailey</p></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"  [routerLinkActive]="['link-active']">
+            <a class="nav-link" routerLink="/home">Home</a>
+          </li>
+          <li class="nav-item"  [routerLinkActive]="['link-active']">
+            <a class="nav-link" routerLink="/about">About</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" routerLink="/services">Services</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" routerLink="/gallery">Gallery</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link" routerLink="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

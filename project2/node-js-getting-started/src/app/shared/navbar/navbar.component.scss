@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
+.logo {
+  transform: scaleX(-1);
+  position: fixed;
+  height: 8rem;
+  left: 0;
+  top: 0;
+}
+#brand {
+
+  h1 {
+    font-family: "Great Vibes";
+    font-weight: 100;
+    font-size: 3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  p {
+    font-family: sans-serif;
+    text-align: right;
+    font-weight: 800;
+    font-size: 0.8rem;
+  }
+}
+
+
+.link-active {
+  background-image: url(../../../assets/img/stroke.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
