@@ -33,7 +33,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "3.2.1",
     "jw-bootstrap-switch-ng2": "2.0.1",
-    "mongoose": "^5.6.5",
+    "mongoose": "^5.7.5",
     "morgan": "^1.9.1",
     "ng2-nouislider": "1.7.12",
     "nouislider": "9.2.0",
